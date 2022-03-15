@@ -5,7 +5,8 @@ import {Controller} from "./controller.js";
 const {
     location,
     pages: {
-        homeHTML
+        homeHTML,
+        controllerHtml
     }
 } = config
 const controller = new Controller()
@@ -25,6 +26,22 @@ async function routes(request, response) {
         const {
             stream
         } = await controller.getFileStream(homeHTML)
+
+        response.writeHead(200, {
+            'Content-Type': 'text/html'
+        })
+
+        return stream.pipe(response)
+    }
+
+    if (method === 'GET' && url === '/controller') {
+        const {
+            stream
+        } = await controller.getFileStream(controllerHtml)
+
+        response.writeHead(200, {
+            'Content-Type': 'text/html'
+        })
 
         return stream.pipe(response)
     }
