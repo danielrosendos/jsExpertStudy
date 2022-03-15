@@ -7,8 +7,6 @@ Marque esse projeto com uma estrela 🌟
 Acesse a [**comunidade exclusiva no discord**](https://bit.ly/semanajsexpert-discord) para tirar suas dúvidas e conhecer pessoas:
 ## Preview
 
-<img src="./prints/demo.png" />
-
 ## Checklist Features
 
 - Web API
@@ -41,7 +39,7 @@ Acesse a [**comunidade exclusiva no discord**](https://bit.ly/semanajsexpert-dis
         - [ ] adicionar um som de efeito novo para a pasta `audios/fx/`
         - [ ] republicar no heroku
 ## Código fonte das aulas e resolução de desafios
-- [Aula01](./aulas/aula01/)
+
 ### Considerações
 - Tire suas dúvidas sobre os desafios em nossa comunidade, o objetivo é você aprender de forma divertida. Surgiu dúvidas? Pergunte por lá!
 
