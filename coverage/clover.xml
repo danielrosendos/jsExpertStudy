@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1647383563999" clover="3.2.0">
+  <project timestamp="1647383563999" name="All files">
+    <metrics statements="63" coveredstatements="50" conditionals="24" coveredconditionals="24" methods="17" coveredmethods="10" elements="104" coveredelements="84" complexity="0" loc="63" ncloc="63" packages="2" files="6" classes="6"/>
+    <package name="server">
+      <metrics statements="51" coveredstatements="43" conditionals="24" coveredconditionals="24" methods="10" coveredmethods="6"/>
+      <file name="config.js" path="/home/daniel/projetos/jsexpert/server/config.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="controller.js" path="/home/daniel/projetos/jsexpert/server/controller.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="routes.js" path="/home/daniel/projetos/jsexpert/server/routes.js">
+        <metrics statements="35" coveredstatements="35" conditionals="22" coveredconditionals="22" methods="5" coveredmethods="5"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="20" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="28" count="9" type="cond" truecount="4" falsecount="0"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="43" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="51" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="58" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="4" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="66" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="78" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="90" count="3" type="stmt"/>
+        <line num="96" count="10" type="stmt"/>
+      </file>
+      <file name="service.js" path="/home/daniel/projetos/jsexpert/server/service.js">
+        <metrics statements="8" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+      </file>
+      <file name="util.js" path="/home/daniel/projetos/jsexpert/server/util.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="tests.unit._util">
+      <metrics statements="12" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4"/>
+      <file name="testUtil.js" path="/home/daniel/projetos/jsexpert/tests/unit/_util/testUtil.js">
+        <metrics statements="12" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4"/>
+        <line num="7" count="16" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="28" count="10" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="32" count="10" type="stmt"/>
+        <line num="44" count="10" type="stmt"/>
+        <line num="45" count="10" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

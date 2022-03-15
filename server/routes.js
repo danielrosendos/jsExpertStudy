@@ -31,9 +31,12 @@ async function routes(request, response) {
             type
         } = await controller.getFileStream(homeHTML)
 
-        response.writeHead(200, {
-            'Content-Type': CONTENT_TYPE[type]
-        })
+        const contentType = CONTENT_TYPE[type];
+
+        if (contentType) {
+            setHeaderResponse(200, contentType, response)
+        }
+
         return stream.pipe(response)
     }
 
@@ -43,9 +46,12 @@ async function routes(request, response) {
             type
         } = await controller.getFileStream(controllerHtml)
 
-        response.writeHead(200, {
-            'Content-Type': CONTENT_TYPE[type]
-        })
+        const contentType = CONTENT_TYPE[type];
+
+        if (contentType) {
+            setHeaderResponse(200, contentType, response)
+        }
+
         return stream.pipe(response)
     }
 
@@ -55,9 +61,12 @@ async function routes(request, response) {
             type
         } = await controller.getFileStream(url)
 
-        response.writeHead(200, {
-            'Content-Type': CONTENT_TYPE[type]
-        })
+        const contentType = CONTENT_TYPE[type];
+
+        if (contentType) {
+            setHeaderResponse(200, contentType, response)
+        }
+
         return stream.pipe(response);
     }
 
@@ -75,6 +84,12 @@ function handleError(error, response) {
     logger.error(`caught error on API ${error.stack}`)
     response.writeHead(500)
     return response.end()
+}
+
+function setHeaderResponse(status, contentType, response) {
+    response.writeHead(status, {
+        'Content-Type': contentType
+    })
 }
 
 export function handler(request, response) {
