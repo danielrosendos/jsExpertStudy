@@ -11,12 +11,14 @@ const {
 } = config;
 
 export class Service {
+
     /**
      *
      * @param filename
+     * @returns {*}
      */
     createFileStream(filename) {
-        fs.createFileStream(filename)
+        return fs.createReadStream(filename)
     }
 
     /**
