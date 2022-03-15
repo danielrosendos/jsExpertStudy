@@ -29,7 +29,8 @@ export default {
             '.css': 'text/css',
             '.js': 'text/javascript',
             '.mp3': 'audio/mpeg',
-            '.png': 'image/png'
+            '.png': 'image/png',
+            '.jpg': 'image/jpeg'
         }
     }
 }

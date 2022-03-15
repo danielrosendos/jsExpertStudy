@@ -31,6 +31,9 @@ async function routes(request, response) {
             type
         } = await controller.getFileStream(homeHTML)
 
+        response.writeHead(200, {
+            'Content-Type': CONTENT_TYPE[type]
+        })
         return stream.pipe(response)
     }
 
@@ -40,6 +43,9 @@ async function routes(request, response) {
             type
         } = await controller.getFileStream(controllerHtml)
 
+        response.writeHead(200, {
+            'Content-Type': CONTENT_TYPE[type]
+        })
         return stream.pipe(response)
     }
 
@@ -48,7 +54,7 @@ async function routes(request, response) {
             stream,
             type
         } = await controller.getFileStream(url)
-        logger.info(type)
+
         response.writeHead(200, {
             'Content-Type': CONTENT_TYPE[type]
         })
