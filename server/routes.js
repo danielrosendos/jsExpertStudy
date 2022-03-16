@@ -15,7 +15,7 @@ const {
 const controller = new Controller()
 
 async function routes(request, response) {
-    const { method, url } = request
+    const {method, url} = request
 
     if (method === 'GET' && url === '/') {
         response.writeHead(302, {
